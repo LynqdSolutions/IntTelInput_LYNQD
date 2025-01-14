@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="ditiosol" constructor="IntlTelInputComponent" version="2.2.0" display-name-key="IntlTelInputComponent" description-key="IntlTelInputComponent description" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <type-group name="phone">
+      <type>SingleLine.Phone</type>
+    </type-group>
+    <property name="Phone" display-name-key="Phone_Display_Key" description-key="Phone_Desc_Key" of-type-group="phone" usage="bound" required="true" />
+    <property name="defaultCC" display-name-key="PropertyDefaultCC_Display_Key" description-key="PropertyDefaultCC_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="us" />
+    <property name="favoriteCC" display-name-key="PropertyFavoriteCC_Display_Key" description-key="PropertyFavoriteCC_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" default-value="" />
+    <property name="showValidationRule" display-name-key="ShowValidationRule_Display_Key" description-key="ShowValidationRule_Desc_Key" of-type="Enum" usage="input" required="true" default-value="No" >
+    <value name="Yes" display-name-key="Yes" description-key="Yes">Yes</value>
+      <value name="No" display-name-key="No" description-key="No">No</value>
+    </property>
+    <property name="enableCallLink" display-name-key="EnableCallLink_Display_Key" description-key="EnableCallLink_Desc_Key" of-type="Enum" usage="input" required="true" default-value="No">
+      <value name="Yes" display-name-key="Yes" description-key="Yes">Yes</value>
+      <value name="No" display-name-key="No" description-key="No">No</value>
+    </property>
+    <!-- 
+      Property node's of-type attribute can be of-type-group attribute. 
+      Example:
+      <type-group name="numbers">
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+      </type-group>
+      <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+    -->
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="IntlTelInputLib/css/intlTelInput.min.css" order="2" />
+      <css path="css/IntlTelInputComponent.css" order="3" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <resx path="strings/IntlTelInputComponent.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>
