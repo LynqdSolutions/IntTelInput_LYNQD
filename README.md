@@ -28,3 +28,5 @@ https://www.npmjs.com/package/intl-tel-input
 
 ## Installation
 Follow this [article](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/component-framework-for-canvas-apps) to setup your enviornment and install the component [Solution Package](https://github.com/LynqdSolutions/IntTelInput_LYNQD/blob/main/releases/IntlTelInpuSolutionUpdate.zip).
+
+After adding the component, add the onLoadListener.js to the onLoad of the form: [Script](https://github.com/LynqdSolutions/IntTelInput_LYNQD/blob/main/source/onLoad/onLoadListener.js)
