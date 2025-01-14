@@ -1,4 +1,7 @@
 # International Telephone Input Power Apps Component
+
+![GitHub Sponsors](https://img.shields.io/github/sponsors/LynqdSolutions?style=for-the-badge&logo=github&label=send%20a%20small%20donation&link=https%3A%2F%2Fgithub.com%2Fsponsors%2FLynqdSolutions)
+
  PCF for international phone input with call link option and automatic phone call record creation.
  
  This is a modified version of the existing project <a href="https://github.com/rafaelbatista6/IntlTelInputPCF">IntlTelInputPCF</a>
@@ -28,3 +31,5 @@ https://www.npmjs.com/package/intl-tel-input
 
 ## Installation
 Follow this [article](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/component-framework-for-canvas-apps) to setup your enviornment and install the component [Solution Package](https://github.com/LynqdSolutions/IntTelInput_LYNQD/blob/main/releases/IntlTelInpuSolutionUpdate.zip).
+
+After adding the component, add the onLoadListener.js to the onLoad of the form: [Script](https://github.com/LynqdSolutions/IntTelInput_LYNQD/blob/main/source/onLoad/onLoadListener.js)
